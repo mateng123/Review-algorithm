@@ -14,7 +14,7 @@ public class ShellSort {
                 Comparable cur = arr[i];
                 int j;
                 for (j= i;j>0 && cur.compareTo(arr[j])<0 ;j-=h){
-                    arr[j] = arr[j+1];
+                    arr[j] = arr[j-h];
                 }
                 arr[j] =(Comparable) cur;
             }
